@@ -1,6 +1,16 @@
 import os
 import json
 
+with open("set-mode/mode.json", "r", encoding='utf8') as file:
+    text = file.read()
+    loads = json.loads(text)
+    mode = loads['mode']
+    update = loads['update']
+    print("MODE     =",mode)
+
+if update == "1":
+    os.popen('sh ~/jk8180-multi/move.sh')
+    
 with open("set-miner-on/online.json", "r", encoding='utf8') as file:
     text = file.read()
     loads = json.loads(text)
