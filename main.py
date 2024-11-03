@@ -9,7 +9,7 @@ with open("set-mode/mode.json", "r", encoding='utf8') as file:
     print("MODE     =",mode)
 
 if openss == "1":
-    os.popen('sh ~/jk8180/openss.sh')
+    os.popen('sh ~/jk8180-A5s/openss.sh')
     
 with open("set-miner-on/online.json", "r", encoding='utf8') as file:
     text = file.read()
