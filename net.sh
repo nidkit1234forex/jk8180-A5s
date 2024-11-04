@@ -5,7 +5,7 @@ until $(ping -q -c1 ${site} > /dev/null 2>&1)
 do
     echo "${site} is unreachable. Retrying"
 sleep  15s
-killall com.termux
+./net1.sh
     # continue
 done
 
