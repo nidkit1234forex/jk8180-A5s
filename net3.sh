@@ -3,7 +3,7 @@
 site='www.google.com'
 until $(ping -q -c1 ${site} > /dev/null 2>&1)
 do
-    echo "${site} is unreachable. Retrying"
+    echo "${site} is unreachable. Retrying(3)"
 sleep  15s
 killall com.termux
     # continue
