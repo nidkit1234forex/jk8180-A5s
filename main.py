@@ -30,7 +30,7 @@ if  mode == "1":
     print("CPU      =",cpu)
  NAME=name
  CPU=cpu
- os.system(f"cd miner && ./ccminer -a verus -o {POOL} -u {WALLET}.{NAME} -p {PASSWORD} -t {CPU}")
+ os.system(f"cd ccminer && ./ccminer -a verus -o {POOL} -u {WALLET}.{NAME} -p {PASSWORD} -t {CPU}")
 
 if  mode == "2":
  with open("set-miner-on/xmrigcc-XFG.json", "r", encoding='utf8') as file:
